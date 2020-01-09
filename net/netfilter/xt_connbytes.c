@@ -31,7 +31,6 @@ connbytes_mt(const struct sk_buff *skb, struct xt_action_param *par)
 	/* warnings are treated as errors - remove constness */
 	struct nf_conn_counter *counters;
 
-
 	ct = nf_ct_get(skb, &ctinfo);
 	if (!ct)
 		return false;
